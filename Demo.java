@@ -22,7 +22,7 @@ class GenEnc{
     }
     void stdForm(){
         StringBuilder sb = new StringBuilder();
-        p = p.trim();
+        p = p.replaceAll(" ","");
         for(char c:p.toCharArray()){
             if(Character.isLetter(c)){
                 sb.append(c);
