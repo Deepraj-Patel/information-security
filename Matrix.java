@@ -3,7 +3,7 @@ public class Matrix{
     public int[][] coFactor(int[][] t,int r, int c){
         int n = t.length;
         int m = t[0].length;
-        int coFact[][] = new int[n-1][n-1];
+        int coFact[][] = new int[n-1][m-1];
         int coI=0;
         
         for(int i=0;i<n;i++){
@@ -46,4 +46,5 @@ public class Matrix{
             }
         }
     }
+
 }
